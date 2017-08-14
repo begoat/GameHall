@@ -16,6 +16,6 @@ configure_file (
 
 find_package(Qt5 COMPONENTS Core Quick REQUIRED)
 
-add_executable(${PROJECT_NAME} "src/main.cpp" "src/WatchAndReload/WatchReload.cpp" "src/WatchAndReload/WatchReload.h" "script/QML/qml.qrc")
+add_executable(GameHall MACOSX_BUNDLE "src/main.cpp" "src/WatchAndReload/WatchReload.cpp" "src/WatchAndReload/WatchReload.h" "script/QML/qml.qrc")
 
-target_link_libraries(${PROJECT_NAME} Qt5::Core Qt5::Quick)
+target_link_libraries(GameHall Qt5::Core Qt5::Quick)
